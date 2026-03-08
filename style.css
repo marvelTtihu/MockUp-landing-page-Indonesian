@@ -226,6 +226,16 @@ body::before {
     }
 }
 
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
 /* BUTTON */
 .btn {
     display: inline-block;
@@ -521,5 +531,54 @@ body::before {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        padding: 3rem 4%;
+    }
+
+    .services-card-grid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .services-title {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 2rem 4%;
+    }
+
+    .stat-grid {
+        padding: 1rem 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        border-right: none;
+        border-left: 2px solid var(--accent);
+    }
+
+    .cta-box {
+        padding: 2rem 1rem;
+    }
+
+    .cta-title {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 2rem 4%;
     }
 }
